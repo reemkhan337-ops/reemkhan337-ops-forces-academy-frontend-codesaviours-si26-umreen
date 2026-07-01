@@ -1,0 +1,64 @@
+<svg viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a3a6b"/>
+      <stop offset="100%" stop-color="#0a1f44"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0c040"/>
+      <stop offset="100%" stop-color="#c9a84c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="450" rx="16" fill="url(#skyGrad)"/>
+
+  <!-- Sun / badge circle -->
+  <circle cx="480" cy="90" r="55" fill="rgba(240,192,64,0.08)"/>
+  <circle cx="480" cy="90" r="32" fill="url(#goldGrad)" opacity="0.9"/>
+  <path d="M480 70 l6 14 15 2 -11 10 3 15 -13 -8 -13 8 3 -15 -11 -10 15 -2 z" fill="#0a1f44"/>
+
+  <!-- Ground -->
+  <rect x="0" y="360" width="600" height="90" fill="rgba(255,255,255,0.04)"/>
+
+  <!-- Academy building -->
+  <rect x="160" y="220" width="280" height="140" fill="rgba(255,255,255,0.08)" rx="4"/>
+  <rect x="160" y="220" width="280" height="14" fill="rgba(201,168,76,0.4)"/>
+
+  <!-- Pillars -->
+  <rect x="185" y="240" width="14" height="120" fill="rgba(255,255,255,0.12)"/>
+  <rect x="235" y="240" width="14" height="120" fill="rgba(255,255,255,0.12)"/>
+  <rect x="285" y="240" width="14" height="120" fill="rgba(255,255,255,0.12)"/>
+  <rect x="335" y="240" width="14" height="120" fill="rgba(255,255,255,0.12)"/>
+  <rect x="385" y="240" width="14" height="120" fill="rgba(255,255,255,0.12)"/>
+
+  <!-- Roof triangle -->
+  <polygon points="300,165 420,222 180,222" fill="rgba(255,255,255,0.1)"/>
+
+  <!-- Flag pole -->
+  <rect x="298" y="120" width="4" height="100" fill="rgba(255,255,255,0.3)"/>
+  <polygon points="302,122 350,135 302,148" fill="url(#goldGrad)"/>
+
+  <!-- Door -->
+  <rect x="280" y="300" width="40" height="60" rx="3" fill="rgba(10,31,68,0.5)"/>
+
+  <!-- Three simple cadet silhouettes -->
+  <g fill="rgba(255,255,255,0.55)">
+    <circle cx="120" cy="330" r="14"/>
+    <rect x="106" y="346" width="28" height="44" rx="8"/>
+  </g>
+  <g fill="rgba(240,192,64,0.85)">
+    <circle cx="170" cy="320" r="16"/>
+    <rect x="153" y="338" width="34" height="52" rx="9"/>
+  </g>
+  <g fill="rgba(255,255,255,0.55)">
+    <circle cx="450" cy="330" r="14"/>
+    <rect x="436" y="346" width="28" height="44" rx="8"/>
+  </g>
+
+  <!-- Stars -->
+  <circle cx="80" cy="60" r="2" fill="#ffffff" opacity="0.6"/>
+  <circle cx="140" cy="40" r="1.5" fill="#ffffff" opacity="0.5"/>
+  <circle cx="220" cy="70" r="2" fill="#ffffff" opacity="0.4"/>
+  <circle cx="520" cy="180" r="1.5" fill="#ffffff" opacity="0.5"/>
+  <circle cx="560" cy="240" r="2" fill="#ffffff" opacity="0.4"/>
+</svg>

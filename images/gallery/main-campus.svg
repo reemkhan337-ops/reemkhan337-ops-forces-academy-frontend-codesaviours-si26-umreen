@@ -1,0 +1,21 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a3a6b"/>
+      <stop offset="100%" stop-color="#0a1f44"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgGrad)"/>
+  
+      <rect x="100" y="150" width="200" height="100" fill="rgba(255,255,255,0.1)"/>
+      <polygon points="200,100 320,155 80,155" fill="rgba(255,255,255,0.15)"/>
+      <rect x="125" y="170" width="10" height="80" fill="rgba(255,255,255,0.2)"/>
+      <rect x="160" y="170" width="10" height="80" fill="rgba(255,255,255,0.2)"/>
+      <rect x="195" y="170" width="10" height="80" fill="rgba(255,255,255,0.2)"/>
+      <rect x="230" y="170" width="10" height="80" fill="rgba(255,255,255,0.2)"/>
+      <rect x="265" y="170" width="10" height="80" fill="rgba(255,255,255,0.2)"/>
+      <rect x="185" y="200" width="30" height="50" fill="#0a1f44"/>
+      <rect x="198" y="60" width="4" height="42" fill="rgba(255,255,255,0.3)"/>
+      <polygon points="202,62 240,75 202,88" fill="#c9a84c"/>
+    
+</svg>

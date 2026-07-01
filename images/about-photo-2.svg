@@ -1,0 +1,20 @@
+<svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="220" rx="10" fill="#eef1f6"/>
+  <rect x="0" y="160" width="300" height="60" fill="#0a1f44" opacity="0.06"/>
+  <!-- Running track lines -->
+  <line x1="0" y1="180" x2="300" y2="180" stroke="#0a1f44" stroke-width="2" stroke-dasharray="10,8" opacity="0.15"/>
+  <line x1="0" y1="200" x2="300" y2="200" stroke="#0a1f44" stroke-width="2" stroke-dasharray="10,8" opacity="0.15"/>
+  <!-- Running figures -->
+  <g fill="#0a1f44" opacity="0.8">
+    <circle cx="90" cy="110" r="11"/>
+    <path d="M90 122 L78 150 M90 122 L100 148 M90 130 L70 138 M90 130 L112 122" stroke="#0a1f44" stroke-width="6" stroke-linecap="round" fill="none"/>
+  </g>
+  <g fill="#c9a84c">
+    <circle cx="160" cy="95" r="13"/>
+    <path d="M160 110 L145 145 M160 110 L173 142 M160 120 L138 128 M160 120 L186 110" stroke="#c9a84c" stroke-width="7" stroke-linecap="round" fill="none"/>
+  </g>
+  <g fill="#0a1f44" opacity="0.8">
+    <circle cx="225" cy="112" r="11"/>
+    <path d="M225 124 L213 150 M225 124 L235 150 M225 132 L207 140 M225 132 L246 124" stroke="#0a1f44" stroke-width="6" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

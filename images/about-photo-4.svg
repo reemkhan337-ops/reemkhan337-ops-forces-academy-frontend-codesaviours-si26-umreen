@@ -1,0 +1,15 @@
+<svg viewBox="0 0 300 190" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="medalGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0c040"/>
+      <stop offset="100%" stop-color="#c9a84c"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="190" rx="10" fill="url(#medalGrad)"/>
+  <!-- Ribbon -->
+  <polygon points="135,15 165,15 175,75 150,60 125,75" fill="#0a1f44"/>
+  <!-- Medal circle -->
+  <circle cx="150" cy="115" r="48" fill="#0a1f44"/>
+  <circle cx="150" cy="115" r="38" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="3"/>
+  <path d="M150 95 l6 14 15 2 -11 10 3 15 -13 -8 -13 8 3 -15 -11 -10 15 -2 z" fill="#f0c040"/>
+</svg>

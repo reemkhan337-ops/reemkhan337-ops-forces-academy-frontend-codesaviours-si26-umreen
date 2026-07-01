@@ -1,0 +1,22 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a3a6b"/>
+      <stop offset="100%" stop-color="#0a1f44"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgGrad)"/>
+  
+      <rect x="50" y="60" width="300" height="160" rx="6" fill="rgba(255,255,255,0.08)"/>
+      <rect x="70" y="80" width="20" height="120" fill="#0a1f44"/>
+      <rect x="95" y="80" width="20" height="120" fill="#1a3a6b"/>
+      <rect x="120" y="80" width="20" height="120" fill="#c9a84c"/>
+      <rect x="145" y="80" width="20" height="120" fill="#0a1f44"/>
+      <rect x="170" y="80" width="20" height="120" fill="#1a3a6b"/>
+      <rect x="195" y="80" width="20" height="120" fill="#f0c040"/>
+      <rect x="220" y="80" width="20" height="120" fill="#0a1f44"/>
+      <rect x="245" y="80" width="20" height="120" fill="#1a3a6b"/>
+      <rect x="270" y="80" width="20" height="120" fill="#c9a84c"/>
+      <rect x="295" y="80" width="20" height="120" fill="#1a3a6b"/>
+    
+</svg>

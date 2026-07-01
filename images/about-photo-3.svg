@@ -1,0 +1,13 @@
+<svg viewBox="0 0 300 190" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="190" rx="10" fill="#eef1f6"/>
+  <!-- Stack of books -->
+  <rect x="70" y="120" width="160" height="18" rx="3" fill="#0a1f44"/>
+  <rect x="80" y="100" width="140" height="18" rx="3" fill="#1a3a6b"/>
+  <rect x="90" y="80" width="120" height="18" rx="3" fill="#c9a84c"/>
+  <rect x="100" y="60" width="100" height="18" rx="3" fill="#0a1f44"/>
+  <!-- Graduation cap on top -->
+  <polygon points="150,20 200,40 150,60 100,40" fill="#0a1f44"/>
+  <rect x="146" y="40" width="8" height="20" fill="#0a1f44"/>
+  <circle cx="195" cy="42" r="4" fill="#c9a84c"/>
+  <line x1="195" y1="42" x2="195" y2="58" stroke="#c9a84c" stroke-width="2"/>
+</svg>
