@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Results - Forces Academy</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Forces <span>Academy</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+        aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+          <li class="nav-item"><a class="nav-link active" href="results.html">Results</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-2">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center mb-3">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Results</li>
+        </ol>
+      </nav>
+      <h1>Student Results</h1>
+      <p>Filter results by course/class and year. All results are officially verified.</p>
+      <div class="gold-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== RESULTS SECTION ===== -->
+  <section class="section-padding">
+    <div class="container">
+
+      <!-- Filter Bar -->
+      <div class="result-filter-bar">
+        <div class="row g-3 align-items-end">
+          <div class="col-md-4">
+            <label class="form-label fw-bold" for="classFilter">Filter by Course / Class</label>
+            <select class="form-select" id="classFilter">
+              <option value="all">All Courses</option>
+              <option value="paf">PAF Preparation</option>
+              <option value="army">Army Commission</option>
+              <option value="navy">Navy Preparation</option>
+              <option value="css">CSS / PMS</option>
+              <option value="matric">Matric</option>
+              <option value="fsc">FSc</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label fw-bold" for="yearFilter">Filter by Year</label>
+            <select class="form-select" id="yearFilter">
+              <option value="all">All Years</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <p class="text-muted small mb-0">
+              &#128161; Use the filters above to find results by course and year.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results Table -->
+      <div class="table-responsive">
+        <table class="table table-hover results-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Student Name</th>
+              <th>Course</th>
+              <th>Result / Selection</th>
+              <th>Year</th>
+              <th>Grade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="result-row" data-class="paf" data-year="2024">
+              <td>1</td>
+              <td>Ahmed Farooq</td>
+              <td>PAF Preparation</td>
+              <td>Selected — PAF Pilot Officer</td>
+              <td>2024</td>
+              <td><span class="grade-badge grade-a">Selected</span></td>
+            </tr>
+            <tr class="result-row" data-class="army" data-year="2024">
+              <td>2</td>
+              <td>Sara Khan</td>
+              <td>Army Commission</td>
+              <td>Selected — PMA Long Course</td>
+              <td>2024</td>
+              <td><span class="grade-badge grade-a">Selected</span></td>
+            </tr>
+            <tr class="result-row" data-class="css" data-year="2024">
+              <td>3</td>
+              <td>Bilal Aslam</td>
+              <td>CSS / PMS</td>
+              <td>Passed — CSS Written</td>
+              <td>2024</td>
+              <td><span class="grade-badge grade-b">Passed</span></td>
+            </tr>
+            <tr class="result-row" data-class="matric" data-year="2024">
+              <td>4</td>
+              <td>Fatima Noor</td>
+              <td>Matric</td>
+              <td>Board Exam — 1st Position District</td>
+              <td>2024</td>
+              <td><span class="grade-badge grade-a">A+</span></td>
+            </tr>
+            <tr class="result-row" data-class="navy" data-year="2024">
+              <td>5</td>
+              <td>Hassan Raza</td>
+              <td>Navy Preparation</td>
+              <td>Selected — PN Short Service</td>
+              <td>2024</td>
+              <td><span class="grade-badge grade-a">Selected</span></td>
+            </tr>
+            <tr class="result-row" data-class="fsc" data-year="2024">
+              <td>6</td>
+              <td>Zainab Malik</td>
+              <td>FSc Pre-Med</td>
+              <td>Board Exam — A Grade</td>
+              <td>2024</td>
+              <td><span class="grade-badge grade-a">A</span></td>
+            </tr>
+            <tr class="result-row" data-class="paf" data-year="2023">
+              <td>7</td>
+              <td>Usman Tariq</td>
+              <td>PAF Preparation</td>
+              <td>Selected — GD Pilot</td>
+              <td>2023</td>
+              <td><span class="grade-badge grade-a">Selected</span></td>
+            </tr>
+            <tr class="result-row" data-class="army" data-year="2023">
+              <td>8</td>
+              <td>Ayesha Butt</td>
+              <td>Army Commission</td>
+              <td>Selected — SSC Women</td>
+              <td>2023</td>
+              <td><span class="grade-badge grade-a">Selected</span></td>
+            </tr>
+            <tr class="result-row" data-class="css" data-year="2023">
+              <td>9</td>
+              <td>Kamran Ali</td>
+              <td>CSS / PMS</td>
+              <td>Passed — PMS Written</td>
+              <td>2023</td>
+              <td><span class="grade-badge grade-b">Passed</span></td>
+            </tr>
+            <tr class="result-row" data-class="matric" data-year="2023">
+              <td>10</td>
+              <td>Mahrukh Siddiq</td>
+              <td>Matric</td>
+              <td>Board Exam — A+ Grade</td>
+              <td>2023</td>
+              <td><span class="grade-badge grade-a">A+</span></td>
+            </tr>
+            <tr class="result-row" data-class="fsc" data-year="2023">
+              <td>11</td>
+              <td>Danyal Hussain</td>
+              <td>FSc Pre-Engineering</td>
+              <td>Board Exam — B Grade</td>
+              <td>2023</td>
+              <td><span class="grade-badge grade-b">B</span></td>
+            </tr>
+            <tr class="result-row" data-class="navy" data-year="2023">
+              <td>12</td>
+              <td>Rehan Sheikh</td>
+              <td>Navy Preparation</td>
+              <td>Selected — PN Cadet</td>
+              <td>2023</td>
+              <td><span class="grade-badge grade-a">Selected</span></td>
+            </tr>
+            <tr class="result-row" data-class="paf" data-year="2022">
+              <td>13</td>
+              <td>Imran Yousaf</td>
+              <td>PAF Preparation</td>
+              <td>Selected — Aeronautical Engineer</td>
+              <td>2022</td>
+              <td><span class="grade-badge grade-a">Selected</span></td>
+            </tr>
+            <tr class="result-row" data-class="army" data-year="2022">
+              <td>14</td>
+              <td>Hina Qureshi</td>
+              <td>Army Commission</td>
+              <td>ISSB Recommended</td>
+              <td>2022</td>
+              <td><span class="grade-badge grade-b">Recommended</span></td>
+            </tr>
+            <tr class="result-row" data-class="matric" data-year="2022">
+              <td>15</td>
+              <td>Sohail Ahmad</td>
+              <td>Matric</td>
+              <td>Board Exam — B Grade</td>
+              <td>2022</td>
+              <td><span class="grade-badge grade-b">B</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Note -->
+      <div class="mt-3 p-3" style="background:rgba(10,31,68,0.04); border-left:3px solid var(--navy); border-radius:4px;">
+        <p class="mb-0 small text-muted">
+          <strong style="color:var(--navy);">Note:</strong>
+          Results displayed here are for representative purposes. Student names are shared with
+          their consent. For official result verification, contact the academy office.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h5>Forces Academy</h5>
+          <p style="font-size:0.9rem; color:rgba(255,255,255,0.6);">Pakistan's most trusted defence academy since 1998.</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5>Quick Links</h5>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="courses.html">Courses</a>
+          <a href="admissions.html">Admissions</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5>Pages</h5>
+          <a href="results.html">Results</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="col-lg-4">
+          <h5>Contact Info</h5>
+          <p style="font-size:0.9rem; color:rgba(255,255,255,0.6);">
+            &#128205; 45-B, Main Boulevard, Gulberg III, Lahore<br>
+            &#128222; +92-42-3571-0000<br>
+            &#128231; info@forcesacademy.edu.pk
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Forces Academy. All rights reserved. Built with Bootstrap 5.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
