@@ -4,12 +4,6 @@
 A 7-page, fully responsive public website for **Forces Academy**, built as part of the
 Frontend Track internship. Pure frontend project — no backend or database used.
 
-## Live Demo & Repo
-
-- **Live Site:** _add your GitHub Pages link here after deployment_
-- **GitHub Repo:** _add your repo link here_
-
-> Replace the two links above before every Friday submission (see Rule 5).
 
 ## Tech Stack
 
