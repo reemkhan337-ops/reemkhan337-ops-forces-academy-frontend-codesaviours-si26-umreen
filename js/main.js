@@ -182,6 +182,24 @@ function initContactForm() {
   });
 }
 
+// ---------- Mobile Navbar Auto-Close ----------
+function initMobileNavClose() {
+  var navbarCollapse = document.getElementById('navbarMain');
+  if (!navbarCollapse) return;
+
+  var navLinks = navbarCollapse.querySelectorAll('.nav-link, .btn-portal');
+
+  navLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      // Only collapse if the menu is currently open (mobile view)
+      if (navbarCollapse.classList.contains('show')) {
+        var bsCollapse = bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
+        bsCollapse.hide();
+      }
+    });
+  });
+}
+
 // ---------- Navbar Active Link ----------
 function setActiveNavLink() {
   var currentPage = window.location.pathname.split('/').pop() || 'index.html';
@@ -217,4 +235,5 @@ document.addEventListener('DOMContentLoaded', function () {
   initContactForm();
   setActiveNavLink();
   initSmoothScroll();
+  initMobileNavClose();
 });
