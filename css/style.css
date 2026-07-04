@@ -97,6 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-portal {
+  display: inline-block;
   background-color: var(--gold);
   color: var(--navy) !important;
   font-weight: 700;
@@ -958,6 +959,12 @@ footer a:hover {
 }
 
 /* ---------- Responsive Tweaks ---------- */
+@media (max-width: 991px) {
+  .navbar-nav .btn-portal {
+    margin-top: 10px;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2rem;
