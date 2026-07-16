@@ -14,9 +14,9 @@
     <div class="container">
       <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
         <svg width="30" height="30" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-          <path d="M20 2 L36 8 V19 C36 29 29 36 20 39 C11 36 4 29 4 19 V8 Z" fill="var(--gold)"/>
-          <path d="M20 6.5 L32 11 V19 C32 26.5 26.5 31.5 20 34 C13.5 31.5 8 26.5 8 19 V11 Z" fill="var(--navy)"/>
-          <path d="M20 12 L22.5 17.5 H28.5 L23.5 21 L25.5 27 L20 23.3 L14.5 27 L16.5 21 L11.5 17.5 H17.5 Z" fill="var(--gold)"/>
+          <path d="M20 2 L36 8 V19 C36 29 29 36 20 39 C11 36 4 29 4 19 V8 Z" fill="#c9a84c"/>
+          <path d="M20 6.5 L32 11 V19 C32 26.5 26.5 31.5 20 34 C13.5 31.5 8 26.5 8 19 V11 Z" fill="#0a1f44"/>
+          <path d="M20 12 L22.5 17.5 H28.5 L23.5 21 L25.5 27 L20 23.3 L14.5 27 L16.5 21 L11.5 17.5 H17.5 Z" fill="#c9a84c"/>
         </svg>
         Forces <span>Academy</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
@@ -61,119 +61,117 @@
 
       <!-- Filter Buttons -->
       <div class="text-center mb-4">
-        <button class="gallery-filter-btn active" data-filter="all">All Photos</button>
-        <button class="gallery-filter-btn" data-filter="classroom">Classroom</button>
-        <button class="gallery-filter-btn" data-filter="physical">Physical Training</button>
+        <button class="gallery-filter-btn active" data-filter="all">All</button>
         <button class="gallery-filter-btn" data-filter="events">Events</button>
-        <button class="gallery-filter-btn" data-filter="selections">Selections</button>
-        <button class="gallery-filter-btn" data-filter="campus">Campus</button>
+        <button class="gallery-filter-btn" data-filter="sports">Sports</button>
+        <button class="gallery-filter-btn" data-filter="academic">Academic</button>
       </div>
 
       <!-- Gallery Grid -->
       <div class="row g-3" id="galleryGrid">
 
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="gallery-item" data-category="classroom" data-title="Mathematics Class" data-desc="Students attending the morning mathematics session." data-img="images/gallery/classroom-1.svg">
-            <div class="gallery-img-box"><img src="images/gallery/classroom-1.svg" alt="Mathematics Class" style="width:100%;height:100%;object-fit:cover;border-radius:10px;position:absolute;top:0;left:0;" /></div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="gallery-item" data-category="academic" data-title="Mathematics Class" data-desc="Students attending the morning mathematics session." data-img="images/gallery/classroom-lecture.jpg">
+            <div class="gallery-img-box"><img src="images/gallery/classroom-lecture.jpg" alt="Mathematics Class" style="width:100%;height:100%;object-fit:cover;border-radius:10px;position:absolute;top:0;left:0;" /></div>
             <div class="gallery-overlay">
               <span style="font-size:1.8rem;">&#128269;</span>
             </div>
           </div>
         </div>
 
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="gallery-item" data-category="physical" data-title="Morning PT Session" data-desc="Students during the morning physical training session." data-img="images/gallery/pt-session.svg">
-            <div class="gallery-img-box"><img src="images/gallery/pt-session.svg" alt="Morning PT Session" style="width:100%;height:100%;object-fit:cover;border-radius:10px;position:absolute;top:0;left:0;" /></div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="gallery-item" data-category="sports" data-title="Morning PT Session" data-desc="Students during the morning physical training session." data-img="images/gallery/sports-field.jpg">
+            <div class="gallery-img-box"><img src="images/gallery/sports-field.jpg" alt="Morning PT Session" style="width:100%;height:100%;object-fit:cover;border-radius:10px;position:absolute;top:0;left:0;" /></div>
             <div class="gallery-overlay">
               <span style="font-size:1.8rem;">&#128269;</span>
             </div>
           </div>
         </div>
 
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="gallery-item" data-category="selections" data-title="PAF Selection Ceremony" data-desc="Our students celebrating PAF selection in 2024." data-img="images/gallery/paf-selection.svg">
-            <div class="gallery-img-box"><img src="images/gallery/paf-selection.svg" alt="PAF Selection Ceremony" style="width:100%;height:100%;object-fit:cover;border-radius:10px;position:absolute;top:0;left:0;" /></div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="gallery-item" data-category="events" data-title="PAF Selection Ceremony" data-desc="Our students celebrating PAF selection in 2024." data-img="https://images.unsplash.com/photo-1716672272737-ced43bf219d0?auto=format&fit=crop&w=1400&q=80">
+            <div class="gallery-img-box"><img src="https://images.unsplash.com/photo-1716672272737-ced43bf219d0?auto=format&fit=crop&w=600&q=70" alt="PAF Selection Ceremony" style="width:100%;height:100%;object-fit:cover;border-radius:10px;position:absolute;top:0;left:0;" /></div>
             <div class="gallery-overlay">
               <span style="font-size:1.8rem;">&#128269;</span>
             </div>
           </div>
         </div>
 
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="gallery-item" data-category="campus" data-title="Main Campus Building" data-desc="The main Forces Academy campus building in Faisalabad." data-img="images/gallery/main-campus.svg">
-            <div class="gallery-img-box"><img src="images/gallery/main-campus.svg" alt="Main Campus Building" style="width:100%;height:100%;object-fit:cover;border-radius:10px;position:absolute;top:0;left:0;" /></div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="gallery-item" data-category="academic" data-title="Main Campus Building" data-desc="The main Forces Academy campus building in Faisalabad." data-img="images/gallery/main-campus.jpg">
+            <div class="gallery-img-box"><img src="images/gallery/main-campus.jpg" alt="Main Campus Building" style="width:100%;height:100%;object-fit:cover;border-radius:10px;position:absolute;top:0;left:0;" /></div>
             <div class="gallery-overlay">
               <span style="font-size:1.8rem;">&#128269;</span>
             </div>
           </div>
         </div>
 
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="gallery-item" data-category="events" data-title="Annual Prize Distribution" data-desc="Annual prize distribution ceremony 2023 for top performing students." data-img="images/gallery/prize-distribution.svg">
-            <div class="gallery-img-box"><img src="images/gallery/prize-distribution.svg" alt="Annual Prize Distribution" style="width:100%;height:100%;object-fit:cover;border-radius:10px;position:absolute;top:0;left:0;" /></div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="gallery-item" data-category="events" data-title="Annual Prize Distribution" data-desc="Annual prize distribution ceremony 2023 for top performing students." data-img="https://images.unsplash.com/photo-1578269174936-2709b6aeb913?auto=format&fit=crop&w=1400&q=80">
+            <div class="gallery-img-box"><img src="https://images.unsplash.com/photo-1578269174936-2709b6aeb913?auto=format&fit=crop&w=600&q=70" alt="Annual Prize Distribution" style="width:100%;height:100%;object-fit:cover;border-radius:10px;position:absolute;top:0;left:0;" /></div>
             <div class="gallery-overlay">
               <span style="font-size:1.8rem;">&#128269;</span>
             </div>
           </div>
         </div>
 
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="gallery-item" data-category="classroom" data-title="English Lecture" data-desc="Essay writing and English composition class in session." data-img="images/gallery/english-lecture.svg">
-            <div class="gallery-img-box"><img src="images/gallery/english-lecture.svg" alt="English Lecture" style="width:100%;height:100%;object-fit:cover;border-radius:10px;position:absolute;top:0;left:0;" /></div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="gallery-item" data-category="academic" data-title="English Lecture" data-desc="Essay writing and English composition class in session." data-img="https://images.unsplash.com/photo-1635424239131-32dc44986b56?auto=format&fit=crop&w=1400&q=80">
+            <div class="gallery-img-box"><img src="https://images.unsplash.com/photo-1635424239131-32dc44986b56?auto=format&fit=crop&w=600&q=70" alt="English Lecture" style="width:100%;height:100%;object-fit:cover;border-radius:10px;position:absolute;top:0;left:0;" /></div>
             <div class="gallery-overlay">
               <span style="font-size:1.8rem;">&#128269;</span>
             </div>
           </div>
         </div>
 
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="gallery-item" data-category="physical" data-title="Obstacle Course Training" data-desc="ISSB-style obstacle course practice on the academy ground." data-img="images/gallery/obstacle-course.svg">
-            <div class="gallery-img-box"><img src="images/gallery/obstacle-course.svg" alt="Obstacle Course Training" style="width:100%;height:100%;object-fit:cover;border-radius:10px;position:absolute;top:0;left:0;" /></div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="gallery-item" data-category="sports" data-title="Obstacle Course Training" data-desc="ISSB-style obstacle course practice on the academy ground." data-img="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1400&q=80">
+            <div class="gallery-img-box"><img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=600&q=70" alt="Obstacle Course Training" style="width:100%;height:100%;object-fit:cover;border-radius:10px;position:absolute;top:0;left:0;" /></div>
             <div class="gallery-overlay">
               <span style="font-size:1.8rem;">&#128269;</span>
             </div>
           </div>
         </div>
 
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="gallery-item" data-category="selections" data-title="Army Commission Batch 2023" data-desc="Batch 2023 students selected for PMA Long Course." data-img="images/gallery/army-batch.svg">
-            <div class="gallery-img-box"><img src="images/gallery/army-batch.svg" alt="Army Commission Batch 2023" style="width:100%;height:100%;object-fit:cover;border-radius:10px;position:absolute;top:0;left:0;" /></div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="gallery-item" data-category="events" data-title="Army Commission Batch 2023" data-desc="Batch 2023 students selected for PMA Long Course." data-img="https://images.unsplash.com/photo-1759328381007-64559a862aa6?auto=format&fit=crop&w=1400&q=80">
+            <div class="gallery-img-box"><img src="https://images.unsplash.com/photo-1759328381007-64559a862aa6?auto=format&fit=crop&w=600&q=70" alt="Army Commission Batch 2023" style="width:100%;height:100%;object-fit:cover;border-radius:10px;position:absolute;top:0;left:0;" /></div>
             <div class="gallery-overlay">
               <span style="font-size:1.8rem;">&#128269;</span>
             </div>
           </div>
         </div>
 
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="gallery-item" data-category="campus" data-title="Library" data-desc="Our well-stocked library available to all enrolled students." data-img="images/gallery/library.svg">
-            <div class="gallery-img-box"><img src="images/gallery/library.svg" alt="Library" style="width:100%;height:100%;object-fit:cover;border-radius:10px;position:absolute;top:0;left:0;" /></div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="gallery-item" data-category="academic" data-title="Library" data-desc="Our well-stocked library available to all enrolled students." data-img="https://images.unsplash.com/photo-1760166699654-5d0e10f51994?auto=format&fit=crop&w=1400&q=80">
+            <div class="gallery-img-box"><img src="https://images.unsplash.com/photo-1760166699654-5d0e10f51994?auto=format&fit=crop&w=600&q=70" alt="Library" style="width:100%;height:100%;object-fit:cover;border-radius:10px;position:absolute;top:0;left:0;" /></div>
             <div class="gallery-overlay">
               <span style="font-size:1.8rem;">&#128269;</span>
             </div>
           </div>
         </div>
 
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="gallery-item" data-category="events" data-title="Defence Day Celebration" data-desc="Forces Academy Defence Day 2023 ceremony." data-img="images/gallery/defence-day.svg">
-            <div class="gallery-img-box"><img src="images/gallery/defence-day.svg" alt="Defence Day Celebration" style="width:100%;height:100%;object-fit:cover;border-radius:10px;position:absolute;top:0;left:0;" /></div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="gallery-item" data-category="events" data-title="Defence Day Celebration" data-desc="Forces Academy Defence Day 2023 ceremony." data-img="images/gallery/parade-event.jpg">
+            <div class="gallery-img-box"><img src="images/gallery/parade-event.jpg" alt="Defence Day Celebration" style="width:100%;height:100%;object-fit:cover;border-radius:10px;position:absolute;top:0;left:0;" /></div>
             <div class="gallery-overlay">
               <span style="font-size:1.8rem;">&#128269;</span>
             </div>
           </div>
         </div>
 
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="gallery-item" data-category="classroom" data-title="ISSB Psychology Session" data-desc="Psychological test preparation class for ISSB candidates." data-img="images/gallery/psychology-class.svg">
-            <div class="gallery-img-box"><img src="images/gallery/psychology-class.svg" alt="ISSB Psychology Session" style="width:100%;height:100%;object-fit:cover;border-radius:10px;position:absolute;top:0;left:0;" /></div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="gallery-item" data-category="academic" data-title="ISSB Psychology Session" data-desc="Psychological test preparation class for ISSB candidates." data-img="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1400&q=80">
+            <div class="gallery-img-box"><img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=600&q=70" alt="ISSB Psychology Session" style="width:100%;height:100%;object-fit:cover;border-radius:10px;position:absolute;top:0;left:0;" /></div>
             <div class="gallery-overlay">
               <span style="font-size:1.8rem;">&#128269;</span>
             </div>
           </div>
         </div>
 
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="gallery-item" data-category="campus" data-title="Computer Lab" data-desc="Digital learning facilities for online test preparation." data-img="images/gallery/computer-lab.svg">
-            <div class="gallery-img-box"><img src="images/gallery/computer-lab.svg" alt="Computer Lab" style="width:100%;height:100%;object-fit:cover;border-radius:10px;position:absolute;top:0;left:0;" /></div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="gallery-item" data-category="academic" data-title="Computer Lab" data-desc="Digital learning facilities for online test preparation." data-img="https://images.unsplash.com/photo-1719159381981-1327b22aff9b?auto=format&fit=crop&w=1400&q=80">
+            <div class="gallery-img-box"><img src="https://images.unsplash.com/photo-1719159381981-1327b22aff9b?auto=format&fit=crop&w=600&q=70" alt="Computer Lab" style="width:100%;height:100%;object-fit:cover;border-radius:10px;position:absolute;top:0;left:0;" /></div>
             <div class="gallery-overlay">
               <span style="font-size:1.8rem;">&#128269;</span>
             </div>
@@ -210,9 +208,9 @@
         <div class="col-lg-4">
           <h5 class="d-flex align-items-center gap-2">
             <svg width="26" height="26" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-              <path d="M20 2 L36 8 V19 C36 29 29 36 20 39 C11 36 4 29 4 19 V8 Z" fill="var(--gold)"/>
-              <path d="M20 6.5 L32 11 V19 C32 26.5 26.5 31.5 20 34 C13.5 31.5 8 26.5 8 19 V11 Z" fill="var(--navy-light)"/>
-              <path d="M20 12 L22.5 17.5 H28.5 L23.5 21 L25.5 27 L20 23.3 L14.5 27 L16.5 21 L11.5 17.5 H17.5 Z" fill="var(--gold)"/>
+              <path d="M20 2 L36 8 V19 C36 29 29 36 20 39 C11 36 4 29 4 19 V8 Z" fill="#c9a84c"/>
+              <path d="M20 6.5 L32 11 V19 C32 26.5 26.5 31.5 20 34 C13.5 31.5 8 26.5 8 19 V11 Z" fill="#1a3a6b"/>
+              <path d="M20 12 L22.5 17.5 H28.5 L23.5 21 L25.5 27 L20 23.3 L14.5 27 L16.5 21 L11.5 17.5 H17.5 Z" fill="#c9a84c"/>
             </svg>
             Forces Academy</h5>
           <p style="font-size:0.9rem; color:rgba(255,255,255,0.6); margin-bottom:15px;">
