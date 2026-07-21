@@ -25,6 +25,11 @@
   box-sizing: border-box;
 }
 
+/* Week 4: smooth scroll for on-page nav / anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-dark);
@@ -260,6 +265,41 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
+/* ---------- Back To Top Button (Week 4) ---------- */
+.back-to-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--navy);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(10, 31, 68, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: var(--transition);
+  z-index: 999;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: var(--gold-light);
+  color: var(--navy);
+}
+
 /* ---------- Footer ---------- */
 footer {
   background-color: var(--navy);
@@ -452,6 +492,77 @@ footer a:hover {
 .testimonial-role {
   color: var(--text-muted);
   font-size: 0.82rem;
+}
+
+/* ---------- Home: Testimonials Carousel (Week 4) ---------- */
+.testimonial-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.testimonial-carousel {
+  padding-bottom: 45px;
+}
+
+.testimonial-carousel .carousel-inner {
+  padding: 6px 6px 10px;
+}
+
+.testimonial-carousel .carousel-control-prev,
+.testimonial-carousel .carousel-control-next {
+  width: 42px;
+  height: 42px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--navy);
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+.testimonial-carousel .carousel-control-prev {
+  left: -6px;
+}
+
+.testimonial-carousel .carousel-control-next {
+  right: -6px;
+}
+
+.testimonial-carousel .carousel-control-prev:hover,
+.testimonial-carousel .carousel-control-next:hover {
+  background: var(--gold);
+}
+
+.testimonial-carousel .carousel-indicators {
+  bottom: -40px;
+}
+
+.testimonial-carousel .carousel-indicators [data-bs-target] {
+  background-color: var(--navy);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  opacity: 0.35;
+}
+
+.testimonial-carousel .carousel-indicators .active {
+  background-color: var(--gold);
+  opacity: 1;
+}
+
+@media (max-width: 767.98px) {
+  .testimonial-carousel .carousel-control-prev,
+  .testimonial-carousel .carousel-control-next {
+    display: none;
+  }
 }
 
 /* ---------- About Page ---------- */
