@@ -14,9 +14,9 @@
     <div class="container">
       <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
         <svg width="30" height="30" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-          <path d="M20 2 L36 8 V19 C36 29 29 36 20 39 C11 36 4 29 4 19 V8 Z" fill="var(--gold)"/>
-          <path d="M20 6.5 L32 11 V19 C32 26.5 26.5 31.5 20 34 C13.5 31.5 8 26.5 8 19 V11 Z" fill="var(--navy)"/>
-          <path d="M20 12 L22.5 17.5 H28.5 L23.5 21 L25.5 27 L20 23.3 L14.5 27 L16.5 21 L11.5 17.5 H17.5 Z" fill="var(--gold)"/>
+          <path d="M20 2 L36 8 V19 C36 29 29 36 20 39 C11 36 4 29 4 19 V8 Z" fill="#c9a84c"/>
+          <path d="M20 6.5 L32 11 V19 C32 26.5 26.5 31.5 20 34 C13.5 31.5 8 26.5 8 19 V11 Z" fill="#0a1f44"/>
+          <path d="M20 12 L22.5 17.5 H28.5 L23.5 21 L25.5 27 L20 23.3 L14.5 27 L16.5 21 L11.5 17.5 H17.5 Z" fill="#c9a84c"/>
         </svg>
         Forces <span>Academy</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
@@ -73,26 +73,26 @@
       <div class="row g-0">
         <div class="col-6 col-md-3">
           <div class="stat-item">
-            <span class="stat-number counter-num" data-target="12500">0</span>
-            <span class="stat-label">Students Trained</span>
+            <span class="stat-number counter-num" data-target="12500" data-suffix="+">0</span>
+            <span class="stat-label">Number of Students</span>
           </div>
         </div>
         <div class="col-6 col-md-3">
           <div class="stat-item">
-            <span class="stat-number counter-num" data-target="25">0</span>
+            <span class="stat-number counter-num" data-target="25" data-suffix="+">0</span>
             <span class="stat-label">Years of Excellence</span>
           </div>
         </div>
         <div class="col-6 col-md-3">
           <div class="stat-item">
-            <span class="stat-number counter-num" data-target="98">0</span>
-            <span class="stat-label">% Pass Rate</span>
+            <span class="stat-number counter-num" data-target="6">0</span>
+            <span class="stat-label">Courses Offered</span>
           </div>
         </div>
         <div class="col-6 col-md-3">
           <div class="stat-item">
-            <span class="stat-number counter-num" data-target="40">0</span>
-            <span class="stat-label">Expert Instructors</span>
+            <span class="stat-number counter-num" data-target="98" data-suffix="%">0</span>
+            <span class="stat-label">Success Rate</span>
           </div>
         </div>
       </div>
@@ -222,46 +222,103 @@
         <p class="text-uppercase fw-bold" style="color:var(--gold); letter-spacing:1px; font-size:0.85rem;">Success Stories</p>
         <h2 class="section-title gold-underline">What Our Students Say</h2>
       </div>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="testimonial-card">
-            <div class="testimonial-quote">"</div>
-            <p class="testimonial-text">
-              Forces Academy changed my life. The faculty is incredibly experienced and
-              the study material is exactly what the tests require. I got selected in PAF on my first attempt.
-            </p>
-            <div>
-              <div class="testimonial-author">Hasan Raza</div>
-              <div class="testimonial-role">PAF Pilot Officer — Batch 2023</div>
+      <div id="testimonialCarousel" class="carousel slide testimonial-carousel" data-bs-ride="carousel" data-bs-interval="4000">
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+          <!-- Slide 1: testimonials 1-2 -->
+          <div class="carousel-item active">
+            <div class="row g-4 justify-content-center">
+              <div class="col-md-6 col-lg-5">
+                <div class="testimonial-card">
+                  <div class="testimonial-quote">"</div>
+                  <p class="testimonial-text">
+                    Forces Academy changed my life. The faculty is incredibly experienced and
+                    the study material is exactly what the tests require. I got selected in PAF on my first attempt.
+                  </p>
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="testimonial-avatar">HR</div>
+                    <div>
+                      <div class="testimonial-author">Hasan Raza</div>
+                      <div class="testimonial-role">PAF Pilot Officer — Batch 2023</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-5">
+                <div class="testimonial-card">
+                  <div class="testimonial-quote">"</div>
+                  <p class="testimonial-text">
+                    The ISSB preparation at Forces Academy is unmatched. They covered every single
+                    aspect — intelligence tests, group tasks, and even the interview preparation.
+                  </p>
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="testimonial-avatar">SM</div>
+                    <div>
+                      <div class="testimonial-author">Sana Malik</div>
+                      <div class="testimonial-role">Army Captain — Batch 2022</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="testimonial-card">
-            <div class="testimonial-quote">"</div>
-            <p class="testimonial-text">
-              The ISSB preparation at Forces Academy is unmatched. They covered every single
-              aspect — intelligence tests, group tasks, and even the interview preparation.
-            </p>
-            <div>
-              <div class="testimonial-author">Sana Malik</div>
-              <div class="testimonial-role">Army Captain — Batch 2022</div>
+
+          <!-- Slide 2: testimonials 3-4 -->
+          <div class="carousel-item">
+            <div class="row g-4 justify-content-center">
+              <div class="col-md-6 col-lg-5">
+                <div class="testimonial-card">
+                  <div class="testimonial-quote">"</div>
+                  <p class="testimonial-text">
+                    I tried two other academies before joining Forces Academy. The difference in
+                    quality and commitment here is huge. Highly recommend to every aspirant.
+                  </p>
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="testimonial-avatar">AN</div>
+                    <div>
+                      <div class="testimonial-author">Ali Nawaz</div>
+                      <div class="testimonial-role">CSS Officer — Batch 2023</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-5">
+                <div class="testimonial-card">
+                  <div class="testimonial-quote">"</div>
+                  <p class="testimonial-text">
+                    Small batch sizes meant every student got personal attention. My weak
+                    areas in intelligence tests were fixed within weeks thanks to the mock sessions.
+                  </p>
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="testimonial-avatar">FZ</div>
+                    <div>
+                      <div class="testimonial-author">Fatima Zahra</div>
+                      <div class="testimonial-role">Navy Cadet — Batch 2024</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
         </div>
-        <div class="col-md-4">
-          <div class="testimonial-card">
-            <div class="testimonial-quote">"</div>
-            <p class="testimonial-text">
-              I tried two other academies before joining Forces Academy. The difference in
-              quality and commitment here is huge. Highly recommend to every aspirant.
-            </p>
-            <div>
-              <div class="testimonial-author">Ali Nawaz</div>
-              <div class="testimonial-role">CSS Officer — Batch 2023</div>
-            </div>
-          </div>
-        </div>
+
+        <!-- Manual controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
   </section>
@@ -287,9 +344,9 @@
         <div class="col-lg-4">
           <h5 class="d-flex align-items-center gap-2">
             <svg width="26" height="26" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-              <path d="M20 2 L36 8 V19 C36 29 29 36 20 39 C11 36 4 29 4 19 V8 Z" fill="var(--gold)"/>
-              <path d="M20 6.5 L32 11 V19 C32 26.5 26.5 31.5 20 34 C13.5 31.5 8 26.5 8 19 V11 Z" fill="var(--navy-light)"/>
-              <path d="M20 12 L22.5 17.5 H28.5 L23.5 21 L25.5 27 L20 23.3 L14.5 27 L16.5 21 L11.5 17.5 H17.5 Z" fill="var(--gold)"/>
+              <path d="M20 2 L36 8 V19 C36 29 29 36 20 39 C11 36 4 29 4 19 V8 Z" fill="#c9a84c"/>
+              <path d="M20 6.5 L32 11 V19 C32 26.5 26.5 31.5 20 34 C13.5 31.5 8 26.5 8 19 V11 Z" fill="#1a3a6b"/>
+              <path d="M20 12 L22.5 17.5 H28.5 L23.5 21 L25.5 27 L20 23.3 L14.5 27 L16.5 21 L11.5 17.5 H17.5 Z" fill="#c9a84c"/>
             </svg>
             Forces Academy</h5>
           <p style="font-size:0.9rem; color:rgba(255,255,255,0.6); margin-bottom:15px;">
@@ -330,6 +387,9 @@
       </div>
     </div>
   </footer>
+
+  <!-- ===== BACK TO TOP BUTTON ===== -->
+  <button id="backToTopBtn" class="back-to-top" aria-label="Back to top" title="Back to top">&#8593;</button>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
