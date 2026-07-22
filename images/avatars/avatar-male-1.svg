@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" fill="#e8e8e8"/>
+  <!-- shoulders / suit -->
+  <path d="M40 200 C40 150 65 128 100 128 C135 128 160 150 160 200 Z" fill="#9a9a9a"/>
+  <!-- shirt collar -->
+  <path d="M85 130 L100 150 L115 130 L108 128 L100 138 L92 128 Z" fill="#e8e8e8"/>
+  <!-- tie -->
+  <path d="M96 138 L104 138 L108 160 L100 172 L92 160 Z" fill="#7a7a7a"/>
+  <!-- neck -->
+  <rect x="88" y="108" width="24" height="26" rx="8" fill="#b9b9b9"/>
+  <!-- head -->
+  <ellipse cx="100" cy="82" rx="34" ry="38" fill="#bcbcbc"/>
+  <!-- short hair -->
+  <path d="M66 78 C64 48 78 30 100 30 C122 30 136 48 134 78 C128 62 118 54 100 54 C82 54 72 62 66 78 Z" fill="#8f8f8f"/>
+</svg>

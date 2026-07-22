@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" fill="#e8e8e8"/>
+  <!-- shoulders / blazer -->
+  <path d="M38 200 C38 148 65 126 100 126 C135 126 162 148 162 200 Z" fill="#9a9a9a"/>
+  <!-- shirt collar -->
+  <path d="M84 128 L100 150 L116 128 L108 126 L100 140 L92 126 Z" fill="#e8e8e8"/>
+  <!-- neck -->
+  <rect x="87" y="106" width="26" height="26" rx="9" fill="#bcbcbc"/>
+  <!-- head -->
+  <ellipse cx="100" cy="80" rx="33" ry="37" fill="#bfbfbf"/>
+  <!-- long wavy hair -->
+  <path d="M60 70 C56 40 74 22 100 22 C126 22 144 40 140 70 C140 100 146 130 136 150 C140 120 128 110 128 90 C128 66 116 52 100 52 C84 52 72 66 72 90 C72 110 60 120 64 150 C54 130 60 100 60 70 Z" fill="#8a8a8a"/>
+</svg>
