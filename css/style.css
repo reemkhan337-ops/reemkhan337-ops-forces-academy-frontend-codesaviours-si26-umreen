@@ -494,18 +494,13 @@ footer a:hover {
   font-size: 0.82rem;
 }
 
-/* ---------- Home: Testimonials Carousel ---------- */
+/* ---------- Home: Testimonials Carousel (Week 4) ---------- */
 .testimonial-avatar {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background: var(--navy);
-  color: var(--gold);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-  font-size: 1.1rem;
+  object-fit: cover;
+  border: 2px solid var(--gold);
   flex-shrink: 0;
 }
 
