@@ -6,8 +6,9 @@
 // ---------- Counter Animation ----------
 function animateCounter(el) {
   var target = parseInt(el.getAttribute('data-target'));
+  var suffix = el.getAttribute('data-suffix') || '';
   var start = 0;
-  var duration = 2000;
+  var duration = 2000; // counts up smoothly over 2 seconds
   var step = Math.ceil(target / (duration / 16));
 
   var timer = setInterval(function () {
@@ -16,7 +17,7 @@ function animateCounter(el) {
       start = target;
       clearInterval(timer);
     }
-    el.textContent = start.toLocaleString();
+    el.textContent = start.toLocaleString() + suffix;
   }, 16);
 }
 
@@ -160,13 +161,21 @@ function initContactForm() {
   form.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    // Basic validation check
+    // Full validation check - all required fields + email format
     var name = document.getElementById('contactName').value.trim();
     var email = document.getElementById('contactEmail').value.trim();
+    var phone = document.getElementById('contactPhone').value.trim();
+    var subject = document.getElementById('contactSubject').value.trim();
     var message = document.getElementById('contactMessage').value.trim();
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (!name || !email || !message) {
+    if (!name || !email || !phone || !subject || !message) {
       alert('Please fill in all required fields.');
+      return;
+    }
+
+    if (!emailPattern.test(email)) {
+      alert('Please enter a valid email address.');
       return;
     }
 
@@ -226,6 +235,25 @@ function initSmoothScroll() {
   });
 }
 
+// ---------- Back To Top Button ----------
+function initBackToTop() {
+  var btn = document.getElementById('backToTopBtn');
+  if (!btn) return;
+
+  // Show button after scrolling down 300px, hide when back at top
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 300) {
+      btn.classList.add('show');
+    } else {
+      btn.classList.remove('show');
+    }
+  });
+
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
 // ---------- Init All ----------
 document.addEventListener('DOMContentLoaded', function () {
   initCounters();
@@ -236,4 +264,5 @@ document.addEventListener('DOMContentLoaded', function () {
   setActiveNavLink();
   initSmoothScroll();
   initMobileNavClose();
+  initBackToTop();
 });
