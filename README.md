@@ -48,12 +48,28 @@ forces-academy/
 
 - Fully responsive — tested on mobile and desktop breakpoints using Bootstrap's grid
   (`col-`, `col-md-`, `col-lg-`) and the in-browser device toolbar.
-- Animated stats counter on the Home page (vanilla JS, `IntersectionObserver`).
+- Animated stats counter on the Home page (vanilla JS, `IntersectionObserver`,
+  counts up over 2 seconds when scrolled into view).
+- Testimonials slider on the Home page (Bootstrap Carousel, autoplay every 4s
+  + manual prev/next controls and dot indicators).
+- Smooth scroll enabled site-wide (`scroll-behavior: smooth` + JS anchor handling).
+- Floating "Back to Top" button on every page — appears after 300px of scroll,
+  hides at the top, animated scroll to top on click.
 - Gallery filter buttons + custom lightbox popup (no external lightbox library).
 - Results table filterable by course and year using `<select>` dropdowns.
 - Contact form with simple required-field validation and a success toast
   (frontend only — no data is actually sent anywhere, since there's no backend).
 - "Student Portal" button in the navbar links out to the Full Stack LMS.
+- Navbar and footer markup checked identical across all 7 pages (only the
+  active nav-link differs per page, as expected).
+- All internal links (`index.html`, `about.html`, `courses.html`,
+  `admissions.html`, `results.html`, `gallery.html`, `contact.html`) verified
+  — no broken links.
+- All images load correctly (SVG illustrations + JPG gallery photos, all
+  under 320KB, no compression needed).
+- Pages tested for responsiveness at 375px (mobile), 768px (tablet), and
+  1440px (desktop): **index.html, about.html, courses.html, admissions.html,
+  results.html, gallery.html, contact.html** — all 7 pages.
 
 ## Notes on Images
 
