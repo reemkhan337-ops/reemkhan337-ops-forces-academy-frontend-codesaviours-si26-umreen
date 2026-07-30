@@ -1,9 +1,19 @@
-# forces-academy-frontend-codesaviours-si26-umreen
 # Forces Academy — Public Website
 
 A 7-page, fully responsive public website for **Forces Academy**, built as part of the
-Frontend Track internship. Pure frontend project — no backend or database used.
+Code Saviours Frontend Track internship (SI-26). Pure frontend project — no backend or
+database used.
 
+🔗 **Live Site:** [ADD YOUR GITHUB PAGES LINK HERE](https://reemkhan337-ops.github.io/reemkhan337-ops-forces-academy-frontend-codesaviours-si26-umreen/)
+
+## Screenshots
+
+| Home | Courses | Gallery |
+|---|---|---|
+| ![Home page](./screenshots/home.png) | ![Courses page](./screenshots/courses.png) | ![Gallery page](./screenshots/gallery.png) |
+
+> Add at least 3 screenshots to a `screenshots/` folder in the repo root (e.g. `home.png`,
+> `courses.png`, `gallery.png`) and they'll display automatically above once pushed to GitHub.
 
 ## Tech Stack
 
@@ -87,6 +97,17 @@ any static server, e.g.:
 ```bash
 npx serve .
 ```
+
+## Known Issues / Future Improvements
+
+- ADD ANY KNOWN ISSUES HERE (e.g. contact form doesn't send real emails since
+  there's no backend; results table data is placeholder, not live).
+- ADD ANYTHING YOU'D IMPROVE WITH MORE TIME (e.g. real photography, backend
+  integration for the Student Portal and contact form).
+
+---
+
+**Built by:** Umreen | Code Saviours SI-26 | 2026
 
 
 
