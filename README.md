@@ -4,7 +4,7 @@ A 7-page, fully responsive public website for **Forces Academy**, built as part 
 Code Saviours Frontend Track internship (SI-26). Pure frontend project — no backend or
 database used.
 
-🔗 **Live Site:** [ADD YOUR GITHUB PAGES LINK HERE](https://reemkhan337-ops.github.io/reemkhan337-ops-forces-academy-frontend-codesaviours-si26-umreen/)
+🔗 **Live Site:** [https://reemkhan337-ops.github.io/reemkhan337-ops-forces-academy-frontend-codesaviours-si26-umreen/]
 
 ## Screenshots
 
