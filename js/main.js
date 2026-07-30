@@ -226,7 +226,10 @@ function setActiveNavLink() {
 function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach(function (link) {
     link.addEventListener('click', function (e) {
-      var target = document.querySelector(this.getAttribute('href'));
+      var href = this.getAttribute('href');
+      // Skip placeholder links like href="#" (e.g. Student Portal) — not a real target
+      if (!href || href.length < 2) return;
+      var target = document.querySelector(href);
       if (target) {
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
