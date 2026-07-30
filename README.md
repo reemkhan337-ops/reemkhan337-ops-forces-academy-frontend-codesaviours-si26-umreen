@@ -95,15 +95,6 @@ any static server, e.g.:
 npx serve .
 ```
 
-## Known Issues / Future Improvements
-
-- ADD ANY KNOWN ISSUES HERE (e.g. contact form doesn't send real emails since
-  there's no backend; results table data is placeholder, not live).
-- ADD ANYTHING YOU'D IMPROVE WITH MORE TIME (e.g. real photography, backend
-  integration for the Student Portal and contact form).
-
----
-
 **Built by:** Umreen | Code Saviours SI-26 | 2026
 
 
