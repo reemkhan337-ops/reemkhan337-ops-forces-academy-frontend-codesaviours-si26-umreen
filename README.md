@@ -4,16 +4,13 @@ A 7-page, fully responsive public website for **Forces Academy**, built as part 
 Code Saviours Frontend Track internship (SI-26). Pure frontend project — no backend or
 database used.
 
-🔗 **Live Site:** [https://reemkhan337-ops.github.io/reemkhan337-ops-forces-academy-frontend-codesaviours-si26-umreen/]
+🔗 **Live Site:** [https://reemkhan337-ops.github.io/reemkhan337-ops-forces-academy-frontend-codesaviours-si26-umreen/](https://reemkhan337-ops.github.io/reemkhan337-ops-forces-academy-frontend-codesaviours-si26-umreen/)
 
 ## Screenshots
 
 | Home | Courses | Gallery |
 |---|---|---|
 | ![Home page](./screenshots/home.png) | ![Courses page](./screenshots/courses.png) | ![Gallery page](./screenshots/gallery.png) |
-
-> Add at least 3 screenshots to a `screenshots/` folder in the repo root (e.g. `home.png`,
-> `courses.png`, `gallery.png`) and they'll display automatically above once pushed to GitHub.
 
 ## Tech Stack
 
