@@ -257,6 +257,49 @@ function initBackToTop() {
   });
 }
 
+// ---------- Dark Mode Toggle (Week 6) ----------
+function initDarkMode() {
+  var toggleBtn = document.getElementById('darkModeToggle');
+  if (!toggleBtn) return;
+
+  // The class is already applied synchronously at the top of <body>
+  // (before this script runs) to avoid a flash of light content.
+  // Here we just wire up the click handler and keep localStorage in sync.
+  toggleBtn.addEventListener('click', function () {
+    document.body.classList.toggle('dark-mode');
+    var isDark = document.body.classList.contains('dark-mode');
+    localStorage.setItem('forcesAcademyTheme', isDark ? 'dark' : 'light');
+  });
+}
+
+// ---------- Scroll Reveal Animations (Week 6) ----------
+// Stats cards slide up, course cards appear one by one with a delay
+function initScrollAnimations() {
+  var statItems = document.querySelectorAll('.stat-item');
+  var courseCards = document.querySelectorAll('.course-preview-card');
+
+  if (statItems.length === 0 && courseCards.length === 0) return;
+
+  var revealObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.25 });
+
+  statItems.forEach(function (el) {
+    revealObserver.observe(el);
+  });
+
+  // Stagger course cards with a short delay between each
+  courseCards.forEach(function (el, index) {
+    el.style.transitionDelay = (index * 0.15) + 's';
+    revealObserver.observe(el);
+  });
+}
+
 // ---------- Init All ----------
 document.addEventListener('DOMContentLoaded', function () {
   initCounters();
@@ -268,4 +311,6 @@ document.addEventListener('DOMContentLoaded', function () {
   initSmoothScroll();
   initMobileNavClose();
   initBackToTop();
+  initDarkMode();
+  initScrollAnimations();
 });
