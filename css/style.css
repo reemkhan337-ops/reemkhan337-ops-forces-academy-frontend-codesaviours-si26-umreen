@@ -1152,3 +1152,202 @@ footer a:hover {
     font-size: 0.9rem;
   }
 }
+
+/* =============================================
+   Week 6: Dark Mode Toggle
+   ============================================= */
+
+/* Toggle button in navbar */
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: var(--gold);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-left: 6px;
+}
+
+.dark-mode-toggle:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: rotate(15deg);
+}
+
+.dark-mode-toggle .dm-icon-sun {
+  display: none;
+}
+
+body.dark-mode .dark-mode-toggle .dm-icon-moon {
+  display: none;
+}
+
+body.dark-mode .dark-mode-toggle .dm-icon-sun {
+  display: inline;
+}
+
+/* ---------- Dark Mode Colors (body.dark-mode) ---------- */
+body.dark-mode {
+  background-color: #0e1420;
+  color: #d8dce4;
+}
+
+/* Headings & muted text */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: #f0c040;
+}
+
+body.dark-mode .text-muted,
+body.dark-mode .section-subtitle,
+body.dark-mode .testimonial-text,
+body.dark-mode .testimonial-role,
+body.dark-mode .team-role,
+body.dark-mode .timeline-content p,
+body.dark-mode .course-detail-label,
+body.dark-mode .step-box p {
+  color: #9aa2b1 !important;
+}
+
+/* Sections with light backgrounds */
+body.dark-mode .bg-light-gray {
+  background-color: #141b2b;
+}
+
+body.dark-mode .section-padding,
+body.dark-mode .section-padding-sm {
+  background-color: #0e1420;
+}
+
+/* Cards & boxes that were white */
+body.dark-mode .card-custom,
+body.dark-mode .testimonial-card,
+body.dark-mode .team-card,
+body.dark-mode .contact-form-card,
+body.dark-mode .result-filter-bar,
+body.dark-mode .lightbox-content {
+  background: #171f30;
+  border-color: #2a3348;
+}
+
+body.dark-mode .course-preview-card,
+body.dark-mode .course-card {
+  border-color: #2a3348;
+  background: #171f30;
+}
+
+body.dark-mode .course-card-body {
+  background: #171f30;
+}
+
+/* Form fields */
+body.dark-mode .form-control {
+  background-color: #1c2536;
+  border-color: #2a3348;
+  color: #d8dce4;
+}
+
+body.dark-mode .form-control::placeholder {
+  color: #6b7386;
+}
+
+body.dark-mode .form-label {
+  color: #f0c040;
+}
+
+/* Tables */
+body.dark-mode table,
+body.dark-mode .results-table,
+body.dark-mode .fee-table {
+  color: #d8dce4;
+}
+
+body.dark-mode .results-table td,
+body.dark-mode .fee-table td {
+  border-color: #2a3348;
+}
+
+/* About icon boxes */
+body.dark-mode .about-icon-box {
+  background-color: rgba(240, 192, 64, 0.12);
+  color: var(--gold);
+}
+
+/* Doc list / step box borders */
+body.dark-mode .doc-list li {
+  border-bottom-color: #2a3348;
+}
+
+/* Gallery placeholders keep navy gradient — already dark, no change needed */
+
+/* Borders generally */
+body.dark-mode .border,
+body.dark-mode hr {
+  border-color: #2a3348 !important;
+}
+
+/* =============================================
+   Week 6: Page Load Animations
+   ============================================= */
+
+/* Hero heading fade-in on page load */
+.hero-title {
+  animation: fadeInUp 0.9s ease both;
+}
+
+.hero-badge {
+  animation: fadeIn 0.7s ease both;
+}
+
+.hero-text {
+  animation: fadeInUp 0.9s ease 0.15s both;
+}
+
+/* Stats cards slide up when scrolled into view */
+.stat-item {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.stat-item.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Course cards appear one by one with a slight delay between each */
+.course-preview-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.course-preview-card.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
